@@ -11,30 +11,29 @@ h1 {
   color: #444;
 }
 
-#word-box {
-  font-size: 2em;
+ul#word-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul#word-list li {
+  font-size: 1.5em;
   background: #fff;
   border: 2px dashed #888;
-  padding: 1em;
-  margin: 1em auto;
+  padding: 0.5em;
+  margin: 0.5em auto;
   width: 90%;
   max-width: 300px;
   border-radius: 10px;
-  cursor: pointer;
 }
 
 button {
   font-size: 1em;
   padding: 0.8em 1.5em;
-  margin-top: 1em;
+  margin: 0.5em;
   background-color: #ff8c42;
   color: white;
   border: none;
   border-radius: 5px;
-}
-
-a {
-  color: #0077cc;
-  text-decoration: underline;
-  font-size: 0.9em;
+  cursor: pointer;
 }
