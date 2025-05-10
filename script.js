@@ -291,10 +291,16 @@ const words = [
   "スプーン"
 ];
 
-
-function changeWord() {
-  const word = words[Math.floor(Math.random() * words.length)];
-  document.getElementById("word-box").textContent = word;
+function changeWords() {
+  const shuffled = [...words].sort(() => 0.5 - Math.random());
+  const selected = shuffled.slice(0, 6);
+  const list = document.getElementById("word-list");
+  list.innerHTML = "";
+  selected.forEach((word, index) => {
+    const li = document.createElement("li");
+    li.textContent = `${index + 1}. ${word}`;
+    list.appendChild(li);
+  });
 }
 
 function showRules() {
@@ -306,3 +312,6 @@ function showMain() {
   document.getElementById("rules-screen").style.display = "none";
   document.getElementById("main-screen").style.display = "block";
 }
+
+// 初期表示
+changeWords();
