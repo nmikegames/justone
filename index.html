@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ジャストワンお題ガチャ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="main-screen">
+    <h1>今日のお題</h1>
+    <div id="word-box">タップして表示</div>
+    <button onclick="changeWord()">お題を変更</button>
+    <p><a href="#" onclick="showRules()">ルールを表示</a></p>
+  </div>
+
+  <div id="rules-screen" style="display:none;">
+    <h1>ジャストワンのルール</h1>
+    <ul>
+      <li>チームで協力してお題を当てよう！</li>
+      <li>出題者はお題を見ない</li>
+      <li>他の人は1語だけヒントを書く</li>
+      <li>ヒントがかぶったら削除！</li>
+      <li>ヒントを見て出題者が答える！</li>
+    </ul>
+    <button onclick="showMain()">お題に戻る</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
