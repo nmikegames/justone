@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #fff8f0;
+  margin: 0;
+  padding: 2em 1em;
+}
+
+h1 {
+  font-size: 1.5em;
+  color: #444;
+}
+
+#word-box {
+  font-size: 2em;
+  background: #fff;
+  border: 2px dashed #888;
+  padding: 1em;
+  margin: 1em auto;
+  width: 90%;
+  max-width: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button {
+  font-size: 1em;
+  padding: 0.8em 1.5em;
+  margin-top: 1em;
+  background-color: #ff8c42;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: underline;
+  font-size: 0.9em;
+}
