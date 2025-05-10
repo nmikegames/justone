@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ジャストワンお題ガチャ</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div id="main-screen">
-    <h1>今日のお題</h1>
-    <div id="word-box">タップして表示</div>
-    <button onclick="changeWord()">お題を変更</button>
-    <p><a href="#" onclick="showRules()">ルールを表示</a></p>
+    <h1>ジャストワンお題ガチャ</h1>
+    <ul id="word-list"></ul>
+    <button onclick="changeWords()">お題を変更</button>
+    <button onclick="showRules()">ルールを表示</button>
   </div>
 
-  <div id="rules-screen" style="display:none;">
+  <div id="rules-screen" style="display: none;">
     <h1>ジャストワンのルール</h1>
     <ul>
-      <li>チームで協力してお題を当てよう！</li>
-      <li>出題者はお題を見ない</li>
-      <li>他の人は1語だけヒントを書く</li>
-      <li>ヒントがかぶったら削除！</li>
-      <li>ヒントを見て出題者が答える！</li>
+      <li>13ラウンド行います。</li>
+      <li>各ラウンドで1人が回答者になり、番号を指定してガチャを引きます。</li>
+      <li>他の人は1語だけヒントを書き、回答者以外で一斉にヒントを公開します。</li>
+      <li>公開されたヒントが被っていた場合は回答者に見せることができません。</li>
+      <li>オープンされたヒントを見て回答者が答えを1回だけ推測します。</li>
+      <li>全員で正解数をカウントしよう！</li>
+    </ul>
+    <p><strong>評価基準（正解数）</strong></p>
+    <ul>
+      <li>13点：完璧！天才チーム</li>
+      <li>10〜12点：すばらしい！</li>
+      <li>7〜9点：なかなかやる！</li>
+      <li>4〜6点：まあまあ！</li>
+      <li>0〜3点：また挑戦しよう！</li>
     </ul>
     <button onclick="showMain()">お題に戻る</button>
   </div>
